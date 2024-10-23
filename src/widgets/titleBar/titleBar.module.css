@@ -1,0 +1,60 @@
+.wrapper {
+    height: var(--height-title-bar);
+    background: var(--color-bg-surface);
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding-left: .5rem;
+}
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    user-select: none;
+    -webkit-user-select: none;
+
+    svg {
+        fill: currentColor;
+    }
+
+    &:hover {
+        background-color: color-mix(in srgb, var(--color-white), transparent 90%);
+    }
+
+    &.close:hover {
+        background-color: color-mix(in srgb, var(--color-error), transparent 50%);
+    }
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-primary);
+}
+
+.logoWrapper {
+    height: var(--height-title-bar);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.buttonsWrapper {
+    height: var(--height-title-bar);
+    display: flex;
+    align-items: center;
+}
+
+.logoText {
+    font-size: 12px;
+    letter-spacing: .07rem;
+    opacity: .8;
+}

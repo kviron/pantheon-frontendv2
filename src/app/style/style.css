@@ -1,0 +1,22 @@
+@import "dark.css";
+@import "light.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-error: #f00;
+
+    --height-title-bar: 30px;
+}
+
+
+body {
+    font-family: "Roboto";
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+}

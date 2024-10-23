@@ -1,0 +1,9 @@
+.theme-dark {
+    --color-primary: #3573ee;
+
+    --color-bg: #1e1f22;
+    --color-bg-card: #292b2f;
+    --color-bg-surface: #2b2d30;
+
+    --color-text-main: #fff;
+}
