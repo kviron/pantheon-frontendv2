@@ -2,6 +2,7 @@ import { Theme } from "@tauri-apps/api/window";
 import { ThemeContext } from "@/shared/context";
 import { FC, useEffect, useMemo, useState } from "react";
 import { tauriService } from "@/shared/services";
+import { Theme as ThemeProviderRadix } from "@radix-ui/themes";
 
 type ThemeProviderProps = {
   children: JSX.Element;
@@ -38,6 +39,8 @@ export const ThemeProvider: FC<ThemeProviderProps> = (props) => {
   );
 
   return (
-    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={value}>
+      <ThemeProviderRadix appearance={theme}>{children}</ThemeProviderRadix>
+    </ThemeContext.Provider>
   );
 };

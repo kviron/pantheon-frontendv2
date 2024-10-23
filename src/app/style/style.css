@@ -19,4 +19,5 @@ body {
     font-family: "Roboto";
     background-color: var(--color-bg);
     color: var(--color-text-main);
+    overflow-y: hidden;
 }

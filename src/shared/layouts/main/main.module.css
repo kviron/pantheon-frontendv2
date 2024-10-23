@@ -1,3 +1,4 @@
 .wrapper {
     margin-top: var(--height-title-bar);
+    height: calc(100vh - var(--height-title-bar));
 }
